@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
 }
 body {
     position: relative;
@@ -14,6 +13,10 @@ body {
     cursor: url('./Assets/heart-solid.svg'), auto;
 }
 
+::selection{
+    background-color: #ffaa0d ;
+    color: #F5F5F5;
+}
 
 .title{
     position: absolute;
@@ -77,7 +80,7 @@ body {
 }
 .button_container:active{
     scale: .95;
-    background-color: #ffcf0d;
+    background-color: #ffaa0d;
 }
 
 #blob {
